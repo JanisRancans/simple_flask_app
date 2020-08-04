@@ -4,7 +4,8 @@ application = Flask(__name__)
 
 @application.route('/')
 def hello_ip():
-    return request.headers.get('X-Forwarded-For', request.remote_addr)
+    message = "Hello, {}".format(request.headers.get('X-Forwarded-For', request.remote_addr))
+    return message
 
 if __name__ == "__main__":
     application.run()

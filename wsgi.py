@@ -5,7 +5,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello_ip():
-    message = "Hello, {}".format(request.remote_addr)
+    message = "Hello, {}".format(request.environ['REMOTE_ADDR'])
     return message
 
 

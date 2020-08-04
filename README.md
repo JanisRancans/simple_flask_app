@@ -1,2 +1,2 @@
-# simple_flask_app
-Simple Flask App for Openshift
+# Simple Flask Application
+Simple Flask App for OpenShift

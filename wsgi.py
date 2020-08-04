@@ -6,7 +6,7 @@ application = Flask(__name__)
 @application.route("/")
 def hello_ip():
     message = "Hello, {}".format(request.environ['REMOTE_ADDR'])
-    return "test"
+    return message
 
 
 if __name__ == "__main__":

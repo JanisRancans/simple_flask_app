@@ -3,7 +3,7 @@ from flask import request
 
 application = Flask(__name__)
 
-@application.route('/ip', methods=['GET'])
+@application.route('/', methods=['GET'])
 def hello_ip():
     return request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
 
